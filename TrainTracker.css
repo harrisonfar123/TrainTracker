@@ -1,0 +1,61 @@
+
+.train-tracker {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 100px);
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.search-section {
+  margin-bottom: 1rem;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  gap: 1rem;
+}
+
+.map-container {
+  flex: 2;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table-container {
+  flex: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.loading,
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  font-size: 1.2rem;
+}
+
+.error {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .map-container {
+    height: 300px;
+  }
+
+  .table-container {
+    overflow-x: auto;
+  }
+}
